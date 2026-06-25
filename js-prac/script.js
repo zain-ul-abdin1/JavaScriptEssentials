@@ -1,4 +1,8 @@
 const button = document.getElementById("calcBtn");
 button.onclick = function(){
-    alert('Button is working');
+   const bill = document.getElementById('billAmount').value
+
+   const tip = bill * 0.15;
+
+   document.getElementById('displayResult').innerText = "Tip amount is : "+ tip;
 }
